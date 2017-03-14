@@ -38,7 +38,6 @@ public class TrainerService {
 
 		trainerEntity.setProperty(Trainer.NAME, trainer.getName());
 		trainerEntity.setProperty(Trainer.EMAIL, trainer.getEmail());
-		trainerEntity.setProperty(Trainer.PET_ID, trainer.getPetId());
 	}
 
 	static Trainer entityToTrainer(Entity trainerEntity) {
@@ -48,8 +47,6 @@ public class TrainerService {
 		trainer.setId(trainerEntity.getKey().getId());
 		trainer.setName((String) trainerEntity.getProperty(Trainer.NAME));
 		trainer.setEmail((String) trainerEntity.getProperty(Trainer.EMAIL));
-		trainer.setPetId(Integer.parseInt(trainerEntity.getProperty(Trainer.PET_ID)
-				.toString()));		
 
 		return trainer;
 	}
