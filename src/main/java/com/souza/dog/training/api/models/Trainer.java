@@ -7,8 +7,7 @@ public class Trainer implements Serializable {
 	public static final String ID = "Id";
 	public static final String NAME = "Name";
 	public static final String LAST_NAME = "LastName";
-	public static final String EMAIL = "Email";
-	public static final String PET_ID = "PetId";	
+	public static final String EMAIL = "Email";		
 
 	private static final long serialVersionUID = 1L;
 
@@ -16,7 +15,6 @@ public class Trainer implements Serializable {
 	private String name;
 	private String lastName;
 	private String email;
-	private Integer petId;
 
 	public Trainer() {
 		super();
@@ -59,14 +57,6 @@ public class Trainer implements Serializable {
 
 	public void setEmail(String email) {
 		this.email = email;
-	}
-
-	public Integer getPetId() {
-		return petId;
-	}
-	
-	public void setPetId(Integer petId) {
-		this.petId = petId;
 	}
 
 }
