@@ -2,9 +2,15 @@ package com.souza.dog.training.api.models;
 
 import java.io.Serializable;
 
-public class Achievements implements Serializable {
+public class Achievement implements Serializable {
 
 	private static final long serialVersionUID = 1L;
+	
+	public static final String ID = "Id";
+	public static final String NAME = "Name";
+	public static final String DESC = "Desc";
+	public static final String ICON_ID = "IconID";
+	public static final String POINTS = "Points";
 
 	private long id;
 	private String name;
@@ -12,11 +18,11 @@ public class Achievements implements Serializable {
 	private Integer iconID;
 	private Integer points;
 
-	public Achievements() {
+	public Achievement() {
 		super();
 	}
 
-	public Achievements(String name, String desc,
+	public Achievement(String name, String desc,
 			Integer iconID, Integer points) {
 		super();
 		this.name = name;
