@@ -1,16 +1,18 @@
 package com.souza.dog.training.api.models;
 
 import java.io.Serializable;
-import java.util.List;
 
 public class Session implements Serializable {
 
 	private static final long serialVersionUID = 1L;
+	
+	public static final String ID = "Id";
+	public static final String NAME = "Name";
+	public static final String DESC = "Desc";
 
 	private long id;
 	private String name;
 	private String desc;
-	private List<Exercise> exercises;
 
 	public Session() {
 		super();
@@ -44,14 +46,6 @@ public class Session implements Serializable {
 
 	public void setDesc(String desc) {
 		this.desc = desc;
-	}
-
-	public List<Exercise> getExercises() {
-		return exercises;
-	}
-
-	public void setExercises(List<Exercise> exercises) {
-		this.exercises = exercises;
 	}
 
 }
