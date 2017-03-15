@@ -6,6 +6,11 @@ public class Exercise implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	public static final String ID = "Id";
+	public static final String NAME = "Name";
+	public static final String DESC = "Desc";
+	public static final String INSTRUCTIONS = "Instructions";
+	
 	private long id;
 	private String name;
 	private String desc;
