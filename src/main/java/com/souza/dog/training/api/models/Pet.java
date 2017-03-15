@@ -6,12 +6,22 @@ import java.util.Date;
 public class Pet implements Serializable {
 
 	private static final long serialVersionUID = 1L;
+	
+	public static final String ID = "Id";
+	public static final String NAME = "Name";
+	public static final String BIRTHDAY = "Birthday";
+	public static final String BREED = "Breed";
+	public static final String WEIGHT = "Weight";
+	public static final String LAST_SESSION = "LastSession";
+	public static final String PIC_ID = "PicId";
+	public static final String CURRENT_STREAK = "CurrentStreak";
+	public static final String MAX_STREAK = "MaxStreak";
 
 	private long id;
 	private String name;
 	private Date birthday;
 	private String breed;
-	private Double weight;
+	private Float weight;
 	private Date lastSession;
 	private Integer picId;
 	private Integer currentStreak;
@@ -21,7 +31,7 @@ public class Pet implements Serializable {
 		super();
 	}
 
-	public Pet(String name, Date birthday, String breed, Double weight,
+	public Pet(String name, Date birthday, String breed, Float weight,
 			Date lastSession, Integer picId, Integer currentStreak,
 			Integer maxStreak) {
 		super();
@@ -35,11 +45,11 @@ public class Pet implements Serializable {
 		this.maxStreak = maxStreak;
 	}
 
-	public long getPetID() {
+	public long getId() {
 		return id;
 	}
 
-	public void setPetID(long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -67,11 +77,11 @@ public class Pet implements Serializable {
 		this.breed = breed;
 	}
 
-	public Double getWeight() {
+	public Float getWeight() {
 		return weight;
 	}
 
-	public void setWeight(Double weight) {
+	public void setWeight(Float weight) {
 		this.weight = weight;
 	}
 
